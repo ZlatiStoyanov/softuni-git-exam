@@ -1,0 +1,14 @@
+{
+  "name": "git-hooks-ci-task",
+  "version": "1.0.0",
+  "description": "Task 2: Git hooks and CI/CD integration",
+  "main": "app.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

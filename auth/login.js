@@ -5,7 +5,7 @@ function login(username, password) {
 
   return {
     user: username,
-    authenticated: true
+    authenticated: true,
   };
 }
 

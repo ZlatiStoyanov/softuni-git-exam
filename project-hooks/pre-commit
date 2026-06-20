@@ -1,0 +1,17 @@
+#!/bin/sh
+
+echo "Running pre-commit checks..."
+
+echo "Checking code formatting..."
+npm run format:check
+
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "Formatting check failed."
+  echo "Run: npm run format"
+  echo "Then commit again."
+  exit 1
+fi
+
+echo "Pre-commit checks passed."
+exit 0
