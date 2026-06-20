@@ -2,6 +2,6 @@
   "appName": "multi-branch-demo",
   "authMode": "none",
   "dashboardTheme": "light",
-  "securityLevel": "standard",
-  "allowInsecureDebug": false
+  "securityLevel": "debug",
+  "allowInsecureDebug": true
 }
