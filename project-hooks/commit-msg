@@ -1,0 +1,20 @@
+#!/bin/sh
+
+COMMIT_MSG_FILE="$1"
+COMMIT_MSG="$(cat "$COMMIT_MSG_FILE")"
+
+PATTERN='^(TASK-[0-9]+|feat|fix|chore|docs|test|ci|refactor)(\([a-zA-Z0-9_-]+\))?: .+'
+
+if ! echo "$COMMIT_MSG" | grep -Eq "$PATTERN"; then
+  echo "Invalid commit message format."
+  echo ""
+  echo "Use one of these formats:"
+  echo "  TASK-123: Fix issue format"
+  echo "  feat: add new feature"
+  echo "  fix: resolve bug"
+  echo "  chore: update configuration"
+  echo ""
+  exit 1
+fi
+
+exit 0
