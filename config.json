@@ -1,7 +1,7 @@
 {
   "appName": "multi-branch-demo",
   "authMode": "jwt",
-  "dashboardTheme": "light",
+  "dashboardTheme": "dark",
   "securityLevel": "hardened",
   "allowInsecureDebug": false
 }
